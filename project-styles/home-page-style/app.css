@@ -517,9 +517,45 @@ header{
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
-
 .tik{
     width: 1.6rem;
     height: 1.6rem;
     color: #ffffff;
+}
+/* ///////// Working-space ////////// */
+
+.Working-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Working-space__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 3.2rem;
+}
+.Working-space__img-wrapper{
+    position: relative;
+}
+.Working-space__img-wrapper4{
+    margin-top: -13rem;
+}
+.Working-space__img-wrapper6{
+    margin-top: -8rem;
+}
+.working-space__img{
+    background: linear-gradient(1.15deg, #020718 0.72%, rgba(255, 255, 255, 0) 41.15%);
+    width: 100%;       
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.Working-space__img-caption{
+    color: var(--App-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
