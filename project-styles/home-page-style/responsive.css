@@ -126,7 +126,7 @@
         right: 0rem;     
         width: 50%;    
         height: 70%;
-        top: 17.6rem;
+        top: 18.2rem;
     }
     .Documentation-b{
         column-gap: 3rem;
@@ -200,6 +200,21 @@
         height: 68%;
         top: 17.6rem;
     }
+    .Documentation-b__title{
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .Documentation-b{
+        flex-direction: column;
+    }
+    .Documentation-b__left{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .Documentation-b__right{
+        width: 100%;
+    }
 }
 @media (max-width: 576px) {
     .container{
@@ -260,6 +275,6 @@
         right: 0;     
         width: 40%;    
         height: 60%;
-        top: 17.6rem;
+        top: 18rem;
     }
 }
