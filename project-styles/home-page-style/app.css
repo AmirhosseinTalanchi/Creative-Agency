@@ -530,8 +530,8 @@ header{
     align-items: center;
 }
 .Working-space__wrapper{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     column-gap: 3rem;
     row-gap: 3.2rem;
 }
@@ -546,12 +546,13 @@ header{
 }
 .working-space__img{
     background: linear-gradient(1.15deg, #020718 0.72%, rgba(255, 255, 255, 0) 41.15%);
-    width: 100%;       
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    width: 100%;
+    flex-shrink: 1;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 .Working-space__img-caption{
     color: var(--App-bg);
