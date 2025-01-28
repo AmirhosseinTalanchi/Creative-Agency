@@ -149,7 +149,19 @@
         column-gap: 2rem;
         row-gap: 2rem;
     }
-}
+    .Great-Customers__text{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.1px;
+        max-width: 62rem;
+    }
+    .Great-Customers__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+}   
 @media (max-width: 768px) {
     .container{
         max-width: 576px;
@@ -236,6 +248,10 @@
     .Working-space__img-wrapper6{
         margin-top: -3.7rem;
     }
+    .Great-Customers__text{
+        max-width: 42rem;
+    }
+    
 }
 @media (max-width: 576px) {
     .container{
@@ -301,4 +317,14 @@
     .Working-space__wrapper{
        grid-template-columns: repeat(1,auto);
     }
+    .Working-space__img-wrapper4{
+        margin-top: 0rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: 0rem;
+    }
+    .Great-Customers__text{
+        max-width: 20rem;
+    }
+    
 }

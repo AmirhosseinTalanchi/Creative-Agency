@@ -2,6 +2,8 @@
     --App-bg: #FFFFFF;
     --primery-color : #4C40F7;
     --secendey-color : #FF6800;
+    --secondary-color-2 : #FE9602;
+    --secondary-color-3 : #FFCC00;
     --Text-Dark : #111029;
     --Text-Grey : #6B6B6B;
     --tertiary :#FF2D59;
@@ -75,6 +77,18 @@ a{
     font-weight: 600;
     color: var(--App-bg);
 }
+.Quote{
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: 0.1px;
+}
+.Quote2{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+}
 .btn{
     display: flex;
     align-items: center;
@@ -90,9 +104,36 @@ a{
     -ms-border-radius: 1.2rem;
     -o-border-radius: 1.2rem;
 }
+.arrow-btn-wrapper{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F6;
+    border-radius:100% ;
+    -webkit-border-radius:100% ;
+    -moz-border-radius:100% ;
+    -ms-border-radius:100% ;
+    -o-border-radius:100% ;
+}
 
-
-
+.arrow-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--primery-color);
+}
+.section-name{
+    color: var(--tertiary);
+    margin-bottom: 2rem;
+    
+}
+.section-title{
+    color: var(--Text-Dark);
+    text-align: center;
+    max-width: 112rem;
+    margin-bottom: 6rem;
+}
 /* ////// App Header ///// */
 header{
     z-index: 100;
@@ -270,17 +311,7 @@ header{
     justify-content: center;
     margin-top: 20rem;
 }
-.section-name{
-    color: var(--tertiary);
-    margin-bottom: 2rem;
-    
-}
-.section-title{
-    color: var(--Text-Dark);
-    text-align: center;
-    max-width: 112rem;
-    margin-bottom: 6rem;
-}
+
 .services__box-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -337,24 +368,7 @@ header{
     text-align: center;
     margin-bottom: 4.4rem;
 }
-.services__box-arrow-wrapper{
-    width: 4.5rem;
-    height: 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F3F4F6;
-    border-radius:100% ;
-    -webkit-border-radius:100% ;
-    -moz-border-radius:100% ;
-    -ms-border-radius:100% ;
-    -o-border-radius:100% ;
-}
-.services__box-arrow{
-    width: 1.2rem;
-    height: 1.2rem;
-    color: var(--primery-color);
-}
+
 .services__box-icon-wrapper--color1{
     background-color: var(--primery-color);
     box-shadow: 0px 15px 30px 0px rgba(76, 64, 247, 0.5);
@@ -545,7 +559,6 @@ header{
     margin-top: -8rem;
 }
 .working-space__img{
-    background: linear-gradient(1.15deg, #020718 0.72%, rgba(255, 255, 255, 0) 41.15%);
     width: 100%;
     flex-shrink: 1;
     border-radius: 0.5rem;
@@ -559,4 +572,92 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* ///////// Great Customers ////////// */
+
+.Great-Customers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20rem 0;
+}
+.Great-Customers__logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 7.7rem;
+    row-gap: 6rem;
+    margin-top: 2rem;
+}
+.Great-Customers__logo{
+    width: 20rem;
+    height: 4rem;
+}
+.Great-Customers2-section{
+    background-color: var(--secondary-color-2);
+    padding: 10rem 0;
+}
+.Great-Customers2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.Great-Customers__text{
+    color: var(--App-bg);
+    text-align: center;
+    max-width: 73.2rem;
+    margin-bottom: 4.4rem;
+}
+.Great-Customers__caption{
+    margin-bottom: .8rem;
+}
+.Great-Customers__caption{
+    color: var(--App-bg);
+    text-align: center;
+}
+.Great-Customers__paj-wapper{
+    display: flex;
+    column-gap: 0.4rem;
+    margin-top: 1.6rem;
+}
+.Great-Customers__paj{
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: var(--secondary-color-3);
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.Great-Customers__paj--active{
+    background-color: var(--App-bg);
+}
+.arrow-btn-wrapper--slider{
+    position: absolute;
+    top: 50%;
+}
+.arrow-btn-wrapper--slider-left{
+    left: 0rem;
+}
+.arrow-btn-wrapper--slider-right{
+    right: 0rem;
+}
+.arrow-btn-wrapper--slider:hover .arrow-btn{
+    color: white;
+}
+.arrow-btn-wrapper--slider:hover{
+    background-color: var(--primery-color);
+}
+.arrow-btn--left{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
