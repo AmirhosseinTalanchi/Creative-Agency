@@ -199,6 +199,40 @@ a{
     margin-bottom: 6rem;
 }
 
+/* ////// App Main ///// */
+
+/* ///////// main-top ////////// */
+
+.main-top{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: -10rem;
+}
+.main-top__left{
+    margin-top: 11.3rem;
+}
+.main-top__title{
+    width: 57rem;
+    margin-bottom: 2.4rem;
+}
+.main-top__title-line{
+    color: var(--secendey-color) ;
+}
+.main-top__caption{
+    width: 46.5rem;
+    margin-bottom: 2.4rem;
+}
+.main-top__btn > svg{
+    width: 3rem;
+    height: 1.8rem;
+}
+.main-top__right{ 
+    position: absolute;
+    right: -10rem;
+    z-index: -1;
+    margin-top: 2rem;
+}
 
 /*////// responsiv //////*/
 

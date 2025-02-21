@@ -33,7 +33,7 @@ function App() {
           <symbol id="Chart" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.99967 32.1808H1.99967C1.55765 32.1808 1.13372 32.0052 0.821163 31.6927C0.508602 31.3801 0.333008 30.9562 0.333008 30.5142V17.1808C0.333008 16.7388 0.508602 16.3149 0.821163 16.0023C1.13372 15.6898 1.55765 15.5142 1.99967 15.5142H6.99967C7.4417 15.5142 7.86562 15.6898 8.17819 16.0023C8.49075 16.3149 8.66634 16.7388 8.66634 17.1808V30.5142C8.66634 30.9562 8.49075 31.3801 8.17819 31.6927C7.86562 32.0052 7.4417 32.1808 6.99967 32.1808ZM18.6663 32.1808H13.6663C13.2243 32.1808 12.8004 32.0052 12.4878 31.6927C12.1753 31.3801 11.9997 30.9562 11.9997 30.5142V2.18083C11.9997 1.7388 12.1753 1.31488 12.4878 1.00232C12.8004 0.689755 13.2243 0.51416 13.6663 0.51416H18.6663C19.1084 0.51416 19.5323 0.689755 19.8449 1.00232C20.1574 1.31488 20.333 1.7388 20.333 2.18083V30.5142C20.333 30.9562 20.1574 31.3801 19.8449 31.6927C19.5323 32.0052 19.1084 32.1808 18.6663 32.1808ZM30.333 32.1808H25.333C24.891 32.1808 24.4671 32.0052 24.1545 31.6927C23.8419 31.3801 23.6663 30.9562 23.6663 30.5142V12.1808C23.6663 11.7388 23.8419 11.3149 24.1545 11.0023C24.4671 10.6898 24.891 10.5142 25.333 10.5142H30.333C30.775 10.5142 31.199 10.6898 31.5115 11.0023C31.8241 11.3149 31.9997 11.7388 31.9997 12.1808V30.5142C31.9997 30.9562 31.8241 31.3801 31.5115 31.6927C31.199 32.0052 30.775 32.1808 30.333 32.1808Z" fill="currentColor"/>
           </symbol>    
-          <symbol id="tik" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <symbol id="tik" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
           </symbol>
           <symbol id="amazon" width="117" height="36" viewBox="0 0 117 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,6 +86,33 @@ function App() {
 
         {/* //App Header */}
         <Header></Header>
+
+        {/*  App Main */}
+        <main>
+          {/* section main-top */}
+            <section>
+              <div className="container">
+                  <div className="main-top">
+                      <div className="main-top__left">
+                          <h1 className="main-top__title h2">
+                              Make your business <span className="main-top__title-line">more powerful</span><br className="br" /> 
+                              with us
+                          </h1>
+                          <p className="main-top__caption body">We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.</p>
+                          <a href="#" className="main-top__btn btn table-button">
+                              Get Started
+                              <svg>
+                                  <use href="#arrow-right"></use>
+                              </svg>
+                          </a>
+                      </div>
+                      <div className="main-top__right">
+                          <img className="main-top__right-img" src="../project-imgae/home-page-img/img/main-top-img.png"/>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </main>
 
 
     
