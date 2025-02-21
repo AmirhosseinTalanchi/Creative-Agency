@@ -307,13 +307,6 @@ a{
     .container{
         max-width: 768px;
     }
-    .header__btn{
-        width: 12.7rem;
-        height: 4.8rem;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
-        font-weight: 400;
-    }
     .main-top__right-img{
         width: 47rem;
         height: 33.5rem;
@@ -394,9 +387,6 @@ a{
 @media (max-width: 768px) {
     .container{
         max-width: 576px;
-    }
-    .header__menu{
-        column-gap: 5rem;
     }
     .main-top{
         flex-wrap: wrap-reverse;
@@ -494,40 +484,6 @@ a{
 @media (max-width: 576px) {
     .container{
         max-width: 100%;
-    }
-    header{
-        padding-bottom: 1.5rem;
-    }
-    .header__btn{
-        display: none;
-    }
-    .header__mobile-btn-wrapper{
-        display: flex;
-    }
-    .header__menu{
-        margin-top: 1.65rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        row-gap: 3.2rem;
-        height: 0rem;
-        overflow: hidden;
-        transition: all 150ms;
-        -webkit-transition: all 150ms;
-        -moz-transition: all 150ms;
-        -ms-transition: all 150ms;
-        -o-transition: all 150ms;
-    }
-    .open{
-        height: 20rem;
-        border-top: 0.2rem solid #ECECEC;
     }
     .main-top__left{
         margin-top: 5rem;
