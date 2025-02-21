@@ -1,38 +1,573 @@
-.App {
-  text-align: center;
+
+/* ///// reset ///// */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ///// font ///// */
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(../public/Poppins-Regular.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ///// main ///// */
+
+
+:root{
+    --App-bg: #FFFFFF;
+    --primery-color : #4C40F7;
+    --secendey-color : #FF6800;
+    --secondary-color-2 : #FE9602;
+    --secondary-color-3 : #FFCC00;
+    --Text-Dark : #111029;
+    --Text-Grey : #6B6B6B;
+    --tertiary :#FF2D59;
+    --green :#4ADB61;
+    --App-bg2 :#F9F9FD;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+.project-svg{
+    display: none;
+}
+body{
+    font-family: "Poppins";
+    background-color: var(--App-bg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ///// reset ///// */
+
+a{
+  text-decoration: none;  
 }
 
-.App-link {
-  color: #61dafb;
+/*////// components //////*/
+.h2{
+    font-size: 5.6rem;
+    line-height: 7.2rem;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+.h3{
+    font-weight: 600;
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.1px;
+}
+.h4{
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+}
+.h5{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+}
+.h6{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+}
+.body{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: var(--Text-Grey);
+}
+.body2{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+.table-button{
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    color: var(--App-bg);
+}
+.menu{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+.Quote{
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: 0.1px;
+}
+.Quote2{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 6.4rem;
+    column-gap: 1rem;
+    background-color: var(--primery-color);
+    box-shadow: -5px 10px 30px 0px rgba(76, 64, 247, 0.5);
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+.arrow-btn-wrapper{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F6;
+    border-radius:100% ;
+    -webkit-border-radius:100% ;
+    -moz-border-radius:100% ;
+    -ms-border-radius:100% ;
+    -o-border-radius:100% ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.arrow-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--primery-color);
+}
+.section-name{
+    color: var(--tertiary);
+    margin-bottom: 2rem;
+    
+}
+.section-title{
+    color: var(--Text-Dark);
+    text-align: center;
+    max-width: 112rem;
+    margin-bottom: 6rem;
+}
+
+
+/*////// responsiv //////*/
+
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+    .Documentation__left-shape{
+        left: -10rem; 
+        width: 90%;    
+        height: 70%;
+    }
+    .Documentation__right-shape{
+        right: 0rem;     
+        width: 40%;    
+        height: 70%;
+    }
+}
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+    .main-top__right{
+        margin-top: 5rem;
+        right: 0;
+    }
+    .main-top__right-img{
+        width: 77.4rem;
+        height: 54rem;
+    }
+   
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 992px;
+    }
+    .main-top__right-img{
+        width: 60rem;
+        height: 42rem;
+    }
+    .main-top__title{
+        font-size: 4.76rem;
+        line-height: 6.12rem;
+    }
+    .main-top__caption{
+        font-size: 1.53rem;
+        line-height: 2.72rem;
+        width: 42.5rem;
+    }
+    .Documentation__left-shape{
+        left: -10rem; 
+        width: 90%;    
+        height: 70%;
+    }
+    .Documentation__right-shape{
+        right: 0rem;     
+        width: 40%;    
+        height: 70%;
+    }
+    .Documentation-b{
+        column-gap: 5.3rem;
+    }
+    .Documentation-b__boxs-number{
+        font-weight: 600;
+        font-size: 4.2rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.1px;
+    }
+    .Documentation-b__boxs{
+        padding: 5.8rem 2.8rem ;
+    }
+    .Documentation-b__title{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 600;
+    }
+    .Documentation-b__caption,.Documentation-b__manu-items,.Documentation-b__boxs-text{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -10.8rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -6.7rem;
+    }
+    .question__left-shape{
+        height: 75rem;
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 768px;
+    }
+    .header__btn{
+        width: 12.7rem;
+        height: 4.8rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .main-top__right-img{
+        width: 47rem;
+        height: 33.5rem;
+    }
+    .main-top__right{
+        right: 0rem;
+    }
+    .main-top__title{
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        letter-spacing: 0.15px;
+        width: 37rem;
+    }
+    .main-top__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        width: 33rem;
+    }
+    .br{
+        display: none;
+    }
+    .section-title{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        max-width: 60rem;
+    }
+    .Documentation__left-shape{
+        left: -10rem; 
+        width: 90%;    
+        height: 60%;
+    }
+    .Documentation__right-shape{
+        right: 0rem;     
+        width: 50%;    
+        height: 70%;
+        top: 18.2rem;
+    }
+    .Documentation-b{
+        column-gap: 3rem;
+    }
+    .Documentation-b__left{
+        width: 70%;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -8rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -5rem;
+    }
+    .Working-space__wrapper{
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .Great-Customers__text{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.1px;
+        max-width: 62rem;
+    }
+    .Great-Customers__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .question__right-shape{
+        width: 30%;
+    }
+    .question__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+
+
+}   
+@media (max-width: 768px) {
+    .container{
+        max-width: 576px;
+    }
+    .header__menu{
+        column-gap: 5rem;
+    }
+    .main-top{
+        flex-wrap: wrap-reverse;
+    }
+    .main-top__right{
+        position: static;
+        margin-top: 2rem;
+    }
+    .main-top__right-img{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .main-top__left{
+        margin-top: 10rem;
+    }
+    .main-top__title{
+        width: 42rem;
+    }
+    .main-top__caption{
+        width: 45rem;
+    }
+    .main-top__btn{
+        width: 18rem;
+        height: 4.8rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .services{
+        margin-top: 12rem;
+    }
+    .section-name{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .section-title{
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .Documentation{
+        margin-top: 12rem;
+    }
+    .Documentation__img{
+        width: 95%;
+    }
+    .Documentation__left-shape{
+        left: -10rem; 
+        width: 95%;    
+        height: 65.5%;
+        top: 19em;
+    }
+    .Documentation__right-shape{
+        right: -0;     
+        width: 50%;    
+        height: 68%;
+        top: 17.6rem;
+    }
+    .Documentation-b__title{
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .Documentation-b{
+        flex-direction: column;
+    }
+    .Documentation-b__left{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .Documentation-b__right{
+        width: 100%;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -6rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -3.7rem;
+    }
+    .Great-Customers__text{
+        max-width: 42rem;
+    }
+    .question__left-shape{
+        height: 70rem;
+    }
+    .question__text-wraapper{
+        width: 90%;
+    }
+    .question__box{
+        padding: 2.4rem 2.4rem 0 2.4rem;
+    }
+
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+    header{
+        padding-bottom: 1.5rem;
+    }
+    .header__btn{
+        display: none;
+    }
+    .header__mobile-btn-wrapper{
+        display: flex;
+    }
+    .header__menu{
+        margin-top: 1.65rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3.2rem;
+        height: 0rem;
+        overflow: hidden;
+        transition: all 150ms;
+        -webkit-transition: all 150ms;
+        -moz-transition: all 150ms;
+        -ms-transition: all 150ms;
+        -o-transition: all 150ms;
+    }
+    .open{
+        height: 20rem;
+        border-top: 0.2rem solid #ECECEC;
+    }
+    .main-top__left{
+        margin-top: 5rem;
+    }
+    .main-top__title{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        width: auto;
+    }
+    .main-top__caption{
+        width: auto;
+    }   
+    .Documentation__left-shape{
+        left: 0; 
+        width: 95%;    
+        height: 57.5%;
+        top: 19em;
+    }
+    .Documentation__right-shape{
+        right: 0;     
+        width: 40%;    
+        height: 60%;
+        top: 18rem;
+    }
+    .Working-space__wrapper{
+       grid-template-columns: repeat(1,auto);
+    }
+    .Working-space__img-wrapper4{
+        margin-top: 0rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: 0rem;
+    }
+    .Great-Customers__text{
+        max-width: 20rem;
+    }
+    .question__right-shape{
+        height: 10%;
+    }
+    .question__left-shape{
+        height: 50rem;
+    }
 }
