@@ -1,5 +1,7 @@
 import './App.css';
 import Header from './Header/Header';
+import WorkingSpace from './Working-space/Working-space';
+import GreatCustomers from './Great-customers/Great-customers';
 
 
 function App() {
@@ -112,10 +114,292 @@ function App() {
                   </div>
               </div>
             </section>
+
+          {/* section Services */}
+            <section>
+                <div className="container">
+                    <div className="services">
+                        <h3 className="section-name h6">Our Services</h3>
+                        <h2 className="section-title h3">The various services we provide to make your business more powerful</h2>
+                        <div className="services__box-wrapper">
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color1">
+                                    <svg className="services__box-icon">
+                                        <use href="#flame"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">Ideate</h4>
+                                <p className="services__box-caption body">We help you develop creative ideas so that your business can grow more rapidly</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color2 ">
+                                    <svg className="services__box-icon">
+                                        <use href="#pen"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">Design</h4>
+                                <p className="services__box-caption body">We provide services with the best designs than our designer team for your business</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color3">
+                                    <svg className="services__box-icon">
+                                        <use href="#dekstop"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">Web Development</h4>
+                                <p className="services__box-caption body">We help develop company websites to be more professional and attractive</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color4">
+                                    <svg className="services__box-icon">
+                                        <use href="#mobile"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">App Development</h4>
+                                <p className="services__box-caption body">We help develop company mobile apps to be more professional and attractive</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color5">
+                                    <svg className="services__box-icon">
+                                        <use href="#Building"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">Business Growth</h4>
+                                <p className="services__box-caption body">We also provide services by providing input for your business growth</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                            <div className="services__box">
+                                <div className="services__box-icon-wrapper services__box-icon-wrapper--color6">
+                                    <svg className="services__box-icon">
+                                        <use href="#Chart"></use>
+                                    </svg>
+                                </div>
+                                <h4 className="services__box-title h6">Digital marketing</h4>
+                                <p className="services__box-caption body">We also help you market your products through an online marketplace</p>
+                                <div className="arrow-btn-wrapper">
+                                    <svg className="arrow-btn">
+                                        <use href="#arrow-right"></use>
+                                    </svg>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          {/* section Documentation */}
+            <section className="section-Documentation1">
+              <div className="container">
+                  <div className="Documentation">
+                      <h3 className="section-name h6">Our Documentation</h3>
+                      <h2 className="section-title h3 Documentation__title">See what our profile is like and how we work for your business</h2>
+                      <img className="Documentation__img" src="../project-imgae/home-page-img/img/Group 10088.png"/>
+                  </div>
+              </div>
+
+              <img className="Documentation__left-shape" src="../project-imgae/home-page-img/img/vector2.png"/>
+              <img className="Documentation__right-shape" src="../project-imgae/home-page-img/img/Shape 3.png"/>
+
+            </section>
+            <section className="section-Documentation2"> 
+              <div className="container">
+                  <div className="Documentation-b">
+                      <div className="Documentation-b__left">
+                          <div className="Documentation-b__box-wrapper1">
+                              <div className="Documentation-b__boxs Documentation-b__boxs-mt">
+                                  <span className="Documentation-b__boxs-number Documentation-b__boxs-number-blue h2">70K+</span>
+                                  <span className="Documentation-b__boxs-text body">We have more than customers</span>
+                              </div>
+                              <div className="Documentation-b__boxs Documentation-b__boxs-pb">
+                                  <span className="Documentation-b__boxs-number Documentation-b__boxs-number-red h2">10M+</span>
+                                  <span className="Documentation-b__boxs-text body">People who are helped because of our hard work</span>
+                              </div>
+                          </div>
+                          <div className="Documentation-b__box-wrapper2">
+                              <div className="Documentation-b__boxs Documentation-b__boxs-mt">
+                                  <span className="Documentation-b__boxs-number Documentation-b__boxs-number-orange h2">100+</span>
+                                  <span className="Documentation-b__boxs-text body">Projects we have
+                                      completed</span>
+                              </div>
+                              <div className="Documentation-b__boxs">
+                                  <span className="Documentation-b__boxs-number Documentation-b__boxs-number-green h2">200+</span>
+                                  <span className="Documentation-b__boxs-text body">Support from world-renowned companies</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div className="Documentation-b__right">
+                          <h3 className="h2 Documentation-b__title"> 
+                              Customer satisfaction is our first priority
+                          </h3>
+                          <div className="body Documentation-b__caption">
+                              We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:
+                          </div>
+                          <ul className="Documentation-b__menu">
+                              <li className="Documentation-b__manu-items body">
+                                  <span className="Documentation-b__manu-items-icon">
+                                      <svg className="tik">
+                                          <use href="#tik"></use>
+                                      </svg>
+                                  </span>
+                                  Provide idea support from our creative team
+                              </li>
+                              <li className="Documentation-b__manu-items body">
+                                  <span className="Documentation-b__manu-items-icon">
+                                      <svg className="tik">
+                                          <use href="#tik"></use>
+                                      </svg>
+                                  </span>
+                                  Provide attractive and professional design services
+                              </li>
+                              <li className="Documentation-b__manu-items body">
+                                  <span className="Documentation-b__manu-items-icon">
+                                      <svg className="tik">
+                                          <use href="#tik"></use>
+                                      </svg>
+                                  </span>
+                                  Support for service 24 hours a week
+                              </li>
+                              <li className="Documentation-b__manu-items body">
+                                  <span className="Documentation-b__manu-items-icon">
+                                      <svg className="tik">
+                                          <use href="#tik"></use>
+                                      </svg>
+                                  </span>
+                                  Helping our customers to grow their business
+                              </li>
+                              <li className="Documentation-b__manu-items body">
+                                  <span className="Documentation-b__manu-items-icon">
+                                      <svg className="tik">
+                                          <use href="#tik"></use>
+                                      </svg>
+                                  </span>
+                                  Provide support to market products through online marketplace
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </section>
+
+          {/* section Working space */}
+            <WorkingSpace></WorkingSpace>
+
+          {/* section Great Customer */}
+            <GreatCustomers></GreatCustomers>
+            <section class="Great-Customers2-section">
+              <div class="container">
+                  <div class="Great-Customers2"> 
+                      <img src="../project-imgae/home-page-img/img/Path 113.png" class="Great-Customers2__logo"/>                
+                      <h4 class="Great-Customers__text Quote">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</h4>
+                      <span class="Great-Customers__caption h6">Mark Garfield</span>
+                      <span class="Great-Customers__caption h6">CEO & Head of Product</span>
+                      <div class="Great-Customers__paj-wapper">
+                          <div class="Great-Customers__paj Great-Customers__paj--active"></div>
+                          <div class="Great-Customers__paj"></div>
+                          <div class="Great-Customers__paj"></div>
+                          <div class="Great-Customers__paj"></div>
+                      </div>
+                      <div class="arrow-btn-wrapper arrow-btn-wrapper--slider arrow-btn-wrapper--slider-left">
+                          <svg class="arrow-btn arrow-btn--left">
+                              <use href="#arrow-right"></use>
+                          </svg>
+                      </div>                           
+                      <div class="arrow-btn-wrapper arrow-btn-wrapper--slider arrow-btn-wrapper--slider-right">
+                          <svg class="arrow-btn">
+                              <use href="#arrow-right"></use>
+                          </svg>
+                      </div>                           
+                  </div>
+              </div>
+            </section>
+
+          {/* section Question */}
+          <section class="question-section">
+            <div class="container">
+                <div class="question">
+                    <h3 class="h6 section-name">Frequently Ask Question</h3>
+                    <h2 class="h3 section-title">Some of our frequently asked questions</h2>
+                    <div class="question__content-wrapper">
+                        <details name="question" class="question__box">
+                            <summary class="question__text menu">
+                                <h4 class="question__text-wraapper">What are the services provided to customers?</h4>
+                                <svg class="question__arrow"> 
+                                    <use href="#arrow "></use>
+                                </svg>
+                            </summary>
+                            <p class="question__caption body2">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                        </details>
+                        <details name="question" class="question__box">
+                            <summary class="question__text menu">
+                                <h4 class="question__text-wrapper">How can I submit a proposal for cooperation?</h4>
+                                <svg class="question__arrow"> 
+                                    <use href="#arrow "></use>
+                                </svg>
+                            </summary>
+                            <p class="question__caption body2">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                        </details>
+                        <details name="question" class="question__box">
+                            <summary class="question__text menu">
+                                <h4 class="question__text-wraapper">I come from a faraway place, can collaboration be done full time online through several meeting applications?</h4>
+                                <svg class="question__arrow"> 
+                                    <use href="#arrow "></use>
+                                </svg>
+                            </summary>
+                            <p class="question__caption body2">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                        </details>
+                        <details name="question" class="question__box">
+                            <summary class="question__text menu">
+                                <h4 class="question__text-wrapper">How do I get the payment complete?</h4>
+                                <svg class="question__arrow"> 
+                                    <use href="#arrow "></use>
+                                </svg>
+                            </summary>
+                            <p class="question__caption body2">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                        </details>
+                        <details name="question" class="question__box">
+                            <summary class="question__text menu">
+                                <h4 class="question__text-wrapper">How long can the collaboration last?</h4>
+                                <svg class="question__arrow"> 
+                                    <use href="#arrow "></use>
+                                </svg>
+                            </summary>
+                            <p class="question__caption body2">Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <img src="../project-imgae/home-page-img/img/questoin section right shape.png" class="question__right-shape"/>
+            <img src="../project-imgae/home-page-img/img/question section left shape.png" class="question__left-shape"/>
+          </section>
+
         </main>
 
-
-    
+       
+        
      
     </div>
   );
