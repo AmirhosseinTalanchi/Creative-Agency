@@ -118,7 +118,7 @@ function App() {
                           </a>
                       </div>
                       <div className="main-top__right">
-                          <img className="main-top__right-img" src="public/project-imgae/home-page-img/img/main-top-img.png"/>
+                      <img className="main-top__right-img" src="%PUBLIC_URL%/project-image/home-page-img/img/main-top-img.png" alt=""/>
                       </div>
                   </div>
               </div>
