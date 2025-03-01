@@ -118,7 +118,7 @@ function App() {
                           </a>
                       </div>
                       <div className="main-top__right">
-                      <img className="main-top__right-img" src="%PUBLIC_URL%/project-image/home-page-img/img/main-top-img.png" alt=""/>
+                            <img src={`${process.env.PUBLIC_URL}/project-image/home-page-img/img/main-top-img.png`} alt="Main Top" />
                       </div>
                   </div>
               </div>
