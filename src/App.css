@@ -545,6 +545,10 @@ a{
     height: 20%; 
 }
 
+.Testimonials-section{
+    background-color: var(--App-bg2);
+}
+
 
 
 
@@ -790,6 +794,9 @@ a{
     }
     .question__box{
         padding: 2.4rem 2.4rem 0 2.4rem;
+    }
+    .question{
+        padding: 12rem 0;
     }
 
 }
