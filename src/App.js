@@ -118,7 +118,7 @@ function App() {
                           </a>
                       </div>
                       <div className="main-top__right">
-                      <img src="project-image/home-page-img/img/main-top-img.png" />
+                         <img src="project-imgae/home-page-img/img/main-top-img.png"/>
                       </div>
                   </div>
               </div>
@@ -406,7 +406,6 @@ function App() {
           </section>
 
           {/* section Testimonials */}
-        
             <section className='Testimonials-section'>
                 <div className='container'>
                     <Testimonials></Testimonials>
