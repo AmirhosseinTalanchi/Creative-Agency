@@ -18,13 +18,7 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-        </div>
-      </section>
-
-      <section className="footer2-section">
-        <div className="container">
-            <div className="footer2">
-                <div className="footer2__box">
+            <div className="footer2__box">
                     <p className="footer2__box-text menu">Get Notified About Project</p>
                     <h3 className="footer2__box-title h3">Subscribe Now</h3>
                     <input type="email" className="footer__box-input body" placeholder="Email">
@@ -34,6 +28,12 @@ export default function Footer() {
                         <use href="#send"></use>
                     </svg>
                 </div>
+        </div>
+      </section>
+
+      <section className="footer2-section">
+        <div className="container">
+            <div className="footer2">
                 <div className="footer__main">
                     <div className="footer__main-left">
                         <div className="app-logo-wrapper">
@@ -52,8 +52,40 @@ export default function Footer() {
                         <h4 className="footer-title h6">Contact</h4>
                         <div className="footer-content-wrapper">
                             <div className="footer-content menu">Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta</div>
-                            <div className="footer-content menu">info@yourdomain.com</div>
+                            <div className="footer-content menu">info@yourdomain<br/>.com</div>
                             <div className="footer-content menu">+62 (0) 000 0000 00</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer__end">
+                    <div className="footer-id menu">© 2021 Creative Agency</div>
+                    <ul className="footer-menu"> 
+                        <a className="footer-menu-itemes menu">Home</a>
+                        <a className="footer-menu-itemes menu">Works</a>
+                        <a className="footer-menu-itemes menu">About</a>
+                        <a className="footer-menu-itemes menu">Pricing </a>
+                        <a className="footer-menu-itemes menu">contact us</a>
+                    </ul>
+                    <div className="foooter-logo-wrapper">
+                        <div className="footer-logo">
+                            <svg className="footer-logo-svg"> 
+                                <use href="#facebook"></use>
+                            </svg>
+                        </div>
+                        <div className="footer-logo">
+                            <svg className="footer-logo-svg">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </div>
+                        <div className="footer-logo">
+                            <svg className="footer-logo-svg">
+                                <use href="#linkedin"></use>
+                            </svg>
+                        </div>
+                        <div className="footer-logo">
+                            <svg className="footer-logo-svg">
+                                <use href="#twitter"></use>
+                            </svg>
                         </div>
                     </div>
                 </div>
