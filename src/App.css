@@ -68,6 +68,7 @@ table {
     --tertiary :#FF2D59;
     --green :#4ADB61;
     --App-bg2 :#F9F9FD;
+    --dark : #00113B;
 }
 html{
     box-sizing: border-box;
@@ -260,7 +261,7 @@ a{
     padding: 4.4rem 3rem ;
     transition: all 200ms;
     background-color: var(--App-bg);
-    box-shadow: -10px 30px 70px 0px rgba(219, 222, 225, 0.4);
+    box-shadow: -15px 20px 70px 0px rgba(76, 64, 247, 0.2);
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;

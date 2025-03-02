@@ -1,0 +1,132 @@
+
+.footer1{
+    padding: 20rem 0 37rem 0;
+}
+.footer1__box{
+    background-color: var(--secondary-color-3) ;
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.footer1__box-text{
+    color: var(--App-bg);
+    margin-bottom: 1.6rem;
+}
+.footer1__box-title{
+    color: var(--App-bg);
+    margin-bottom: 3.2rem;
+}
+.footer2-section{
+    background-color: var(--dark);
+    position: relative;
+    width: 100%;
+    height: 72.6rem;
+}
+.footer2{
+    width: 100%;
+    position: absolute;
+    top: -17rem;
+}
+.footer2__box{
+    background-color: var(--primery-color);
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.footer2__box-text{
+    color: var(--App-bg);
+    margin-bottom: 1.6rem;
+}
+.footer2__box-title{
+    color: var(--App-bg);
+    margin-bottom: 3.2rem;
+}
+.footer__box-input{
+    width: 50rem;
+    height: 7.2rem;
+    padding: 2rem 2.8rem;
+    border: 2px solid rgba(76, 64, 247, 1);
+    outline: none;
+    color: #ABAFC7;
+    box-shadow: 0px 8px 50px 0px rgba(49, 35, 248, 1);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.footer__box-send{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.footer__main{
+    margin-top: 8rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 4.4rem;
+    border-bottom: 0.1rem solid var(--App-bg);
+}
+.footer-text{
+    color: var(--App-bg);
+    max-width: 36rem;
+    margin-top: 3.2rem;
+    opacity: 75%;
+}
+.app-logo-wrapper{
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: var(--primery-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 10px 30px 0px rgba(76, 64, 247, 0.5);
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+.app-logo{
+    width: 2rem;
+    height: 2rem;
+}
+.footer-title{
+    color: var(--App-bg);
+}
+.footer-img{
+    margin-top: 3.2rem;
+}
+.footer__main-right{
+    max-width: 17.2rem;
+}
+.footer-content-wrapper{
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footer-content{
+    color: var(--App-bg);
+}
