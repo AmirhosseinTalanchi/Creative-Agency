@@ -815,6 +815,18 @@ a{
     .Documentation-b__left{
         width: 70%;
     }
+    .Great-Customers__text{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.1px;
+        max-width: 62rem;
+    }
+    .Great-Customers__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
     .question__right-shape{
         width: 30%;
     }
@@ -903,6 +915,9 @@ a{
     .Documentation-b__right{
         width: 100%;
     }
+    .Great-Customers__text{
+        max-width: 42rem;
+    }
     .question__left-shape{
         height: 70rem;
     }
@@ -943,6 +958,9 @@ a{
         width: 40%;    
         height: 60%;
         top: 18rem;
+    }
+    .Great-Customers__text{
+        max-width: 20rem;
     }
     .question__right-shape{
         height: 10%;
