@@ -1,15 +1,15 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from './Header/Header';
 import WorkingSpace from './Working-space/Working-space';
 import GreatCustomers from './Great-customers/Great-customers';
 import Testimonials from './Testimonials/Testimonials';
 import Footer from './Footer/Footer';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './App.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 
 const SliderComponent = () => {
@@ -41,12 +41,20 @@ const testimonials = [
 ];
 
 
-
-
-
-
-
 function App() {
+
+    const storedTheme = localStorage.getItem("theme") || "light";
+    const [theme, setTheme] = useState(storedTheme);
+    
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+      }, [theme]);
+    
+    const toggleTheme = () => {
+        setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
+      };
+    
   return (
     <div className="App">
  
@@ -160,7 +168,7 @@ function App() {
         </svg>
 
         {/* //App Header */}
-        <Header>
+        <Header toggleTheme={toggleTheme}>
         </Header>
 
         {/*  App Main */}
@@ -183,7 +191,7 @@ function App() {
                           </a>
                       </div>
                       <div className="main-top__right">
-                         <img className='main-top__right-img' src="project-imgae/home-page-img/img/main-top-img.png"/>
+                         <img className='main-top__right-img' src="project-imgae/home-page-img/img/main-top-img.webp"/>
                       </div>
                   </div>
               </div>
@@ -291,12 +299,12 @@ function App() {
                   <div className="Documentation">
                       <h3 className="section-name h6">Our Documentation</h3>
                       <h2 className="section-title h3 Documentation__title">See what our profile is like and how we work for your business</h2>
-                      <img className="Documentation__img" src="../project-imgae/home-page-img/img/Group 10088.png"/>
+                      <img className="Documentation__img" src="project-imgae/home-page-img/img/Documentation section/Group 10088.webp"/>
                   </div>
               </div>
 
-              <img className="Documentation__left-shape" src="../project-imgae/home-page-img/img/vector2.png"/>
-              <img className="Documentation__right-shape" src="../project-imgae/home-page-img/img/Shape 3.png"/>
+              <img className="Documentation__left-shape" src="project-imgae/home-page-img/img/Documentation section/vector2.png"/>
+              <img className="Documentation__right-shape" src="project-imgae/home-page-img/img/Documentation section/Shape 3.png"/>
 
             </section>
             <section className="section-Documentation2"> 
@@ -475,8 +483,8 @@ function App() {
                     </div>
                 </div>
             </div>
-            <img src="../project-imgae/home-page-img/img/questoin section right shape.png" className="question__right-shape"/>
-            <img src="../project-imgae/home-page-img/img/question section left shape.png" className="question__left-shape"/>
+            <img src="project-imgae/home-page-img/img/question section/questoin section right shape.png" className="question__right-shape"/>
+            <img src="project-imgae/home-page-img/img/question section/question section left shape.png" className="question__left-shape"/>
           </section>
 
           {/* section Testimonials */}

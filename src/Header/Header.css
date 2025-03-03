@@ -3,7 +3,7 @@ header{
     position: fixed;
     right: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--App-bg);
 }
 .header{
     display: flex;
@@ -12,7 +12,8 @@ header{
     padding-top: 2.8rem;
     position: relative;
     z-index: 100;
-
+    padding-bottom: 2.8rem;
+    
 }
 .app-logo-wrapper{
     width: 4.8rem;
@@ -42,7 +43,7 @@ header{
     color: var(--Text-Grey);
 }
 .header__menu-item--active{
-    color: var(--primery-color);
+    color: var(--section-title);
 }
 .header__btn{
     width: 16rem;
@@ -127,6 +128,34 @@ header{
     z-index: 99;
     opacity: 1;
     display: block;
+}
+.header-right{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+.night-mode-btn-wrapper{
+    width: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--primery-color);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.night-mode-btn{
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--App-bg);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 

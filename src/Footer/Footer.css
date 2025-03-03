@@ -1,6 +1,6 @@
 
 .footer1{
-    padding: 20rem 0 0 0;
+    padding: 20rem 0;
 }
 .footer1__box{
     background-color: var(--secondary-color-3) ;
@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 20rem;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -136,7 +135,7 @@
     padding: 4.4rem 2rem 5.5rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 3rem;
 }
@@ -213,7 +212,12 @@
     .container{
         max-width: 768px;
     }
-
+    .footer__end{
+        justify-content: center;
+    }
+    .footer1{
+        padding: 12rem 0;
+    }
 }
 @media (max-width: 768px) {
     .container{

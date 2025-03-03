@@ -60,6 +60,7 @@ table {
 :root{
     --App-bg: #FFFFFF;
     --primery-color : #4C40F7;
+    --section-title : #4C40F7;
     --secendey-color : #FF6800;
     --secondary-color-2 : #FE9602;
     --secondary-color-3 : #FFCC00;
@@ -69,6 +70,13 @@ table {
     --green :#4ADB61;
     --App-bg2 :#F9F9FD;
     --dark : #00113B;
+}
+[data-theme="dark"] {
+    --App-bg: #00113B;
+    --section-title : #FFCC00;
+    --Text-Grey : #ffffff;
+    
+
 }
 html{
     box-sizing: border-box;
@@ -135,7 +143,7 @@ a{
     font-size: 1.6rem;
     line-height: 2.6rem;
     font-weight: 600;
-    color: var(--App-bg);
+    color: #ffffff;
 }
 .menu{
     font-size: 1.6rem;
@@ -234,6 +242,9 @@ a{
     z-index: -1;
     margin-top: 2rem;
 }
+.main-top__right-img{
+    mix-blend-mode: color-burn;
+}
 
 /* ///////// Services ////////// */
 
@@ -252,9 +263,11 @@ a{
     align-items: center;
     column-gap: 3.2rem;
     row-gap: 6rem;
+  
 }
 .services__box{
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -589,9 +602,11 @@ a{
 
 /* ///////// Great Question ////////// */
 
-
+.question-section{
+    user-select: none;
+}
 .question{
-    padding: 20rem 0;
+    padding: 20rem 0  ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -659,7 +674,7 @@ a{
     right: 0;
     z-index: -1;
     width: 20%;
-    height: 20%; 
+    height: 20rem; 
 }
 
 .Testimonials-section{
@@ -793,10 +808,16 @@ a{
     .br{
         display: none;
     }
+    .services{
+        margin-top: 12rem;
+    }
     .section-title{
         font-size: 2.4rem;
         line-height: 3.2rem;
         max-width: 60rem;
+    }
+    .Documentation{
+        margin-top: 12rem;
     }
     .Documentation__left-shape{
         left: -10rem; 
@@ -815,6 +836,13 @@ a{
     .Documentation-b__left{
         width: 70%;
     }
+    .section-Documentation2{
+        padding-top: 8rem;
+    }
+    .Great-Customers{
+        margin: 12rem 0 ;
+        
+    }
     .Great-Customers__text{
         font-weight: 400;
         font-size: 2rem;
@@ -826,6 +854,9 @@ a{
         font-size: 1.4rem;
         line-height: 2.4rem;
         font-weight: 400;
+    }
+    .question{
+        padding: 12rem 0;
     }
     .question__right-shape{
         width: 30%;
@@ -921,6 +952,9 @@ a{
     .question__left-shape{
         height: 70rem;
     }
+    .question__right-shape{
+        height: 15rem;
+    }
     .question__text-wraapper{
         width: 90%;
     }
@@ -963,7 +997,7 @@ a{
         max-width: 20rem;
     }
     .question__right-shape{
-        height: 10%;
+        height: 10rem;
     }
     .question__left-shape{
         height: 50rem;

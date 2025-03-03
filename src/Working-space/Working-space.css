@@ -3,12 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20rem;
 }
 .Working-space__wrapper{
     display: grid;
     grid-template-columns: repeat(3,auto);
     column-gap: 3rem;
     row-gap: 3.2rem;
+    width: 100%;
+    flex-grow: 1;
 }
 .Working-space__img-wrapper{
     position: relative;
@@ -21,7 +24,6 @@
 }
 .working-space__img{
     width: 100%;
-    flex-shrink: 1;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -69,6 +71,9 @@
 }@media (max-width: 992px) {
     .container{
         max-width: 768px;
+    }
+    .Working-space{
+        margin-top: 12rem;
     }
     .Working-space__img-wrapper4{
         margin-top: -8rem;

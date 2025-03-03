@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 10rem 0;
+   
 }
 .Testimonials__user-wrapper{
     display: grid;
@@ -47,7 +48,6 @@
     .container{
         max-width: 768px;
     }
-    
 }
 @media (max-width: 768px) {
     .container{
