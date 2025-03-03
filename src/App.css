@@ -471,6 +471,122 @@ a{
     color: #ffffff;
 }
 
+/* ///////// GreatCustomer ////////// */
+.Great-Customers2-section{
+    background-color: var(--secondary-color-2);
+    padding: 10rem 0;
+}
+.Great-Customers2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.Great-Customers__text{
+    color: var(--App-bg);
+    text-align: center;
+    max-width: 73.2rem;
+    margin-bottom: 4.4rem;
+}
+.Great-Customers__caption{
+    margin-bottom: .8rem;
+}
+.Great-Customers__caption{
+    color: var(--App-bg);
+    text-align: center;
+}
+.swiper-pagination {
+    position: relative;
+    margin-top: 15px;
+    column-gap: 0.4rem;
+    margin-top: 1.6rem;
+}
+.swiper-pagination-bullet {
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: var(--secondary-color-3);
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--App-bg);
+    transform: scale(1.3);
+}
+.arrow-btn-wrapper--slider{
+    position: absolute;
+    top: 50%;
+}
+.arrow-btn-wrapper--slider-left{
+    left: 0rem;
+}
+.arrow-btn-wrapper--slider-right{
+    right: 0rem;
+}
+.arrow-btn-wrapper--slider:hover .arrow-btn{
+    color: white;
+}
+.arrow-btn-wrapper--slider:hover{
+    background-color: var(--primery-color);
+}
+.arrow-btn--left{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    width:4.5rem ;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--App-bg);
+    z-index: 10;
+    border: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.custom-prev:hover,.custom-next:hover{
+    background-color: var(--primery-color);
+}
+.custom-prev:hover .svgs{
+    color: var(--App-bg);
+}
+.custom-next:hover .svgs{
+    color: var(--App-bg);
+}
+.custom-next > svg ,.custom-prev > svg {
+    width: 2rem;
+    height: 2rem;
+    color: #ABAFC7;
+}
+.custom-prev > svg {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.custom-prev {
+    left: 10px;
+}
+.custom-next {
+    right: 10px;
+}
+  
+
+
 /* ///////// Great Question ////////// */
 
 

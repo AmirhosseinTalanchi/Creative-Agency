@@ -1,9 +1,49 @@
-import './App.css';
+import { useEffect } from "react";
 import Header from './Header/Header';
 import WorkingSpace from './Working-space/Working-space';
 import GreatCustomers from './Great-customers/Great-customers';
 import Testimonials from './Testimonials/Testimonials';
 import Footer from './Footer/Footer';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './App.css';
+
+
+const SliderComponent = () => {
+    useEffect(() => {
+      const swiper = new Swiper(".swiper-container", {
+        modules: [Navigation, Pagination, Autoplay],
+        navigation: {
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        },
+      });
+    }, [])};
+const testimonials = [
+    {
+        text: "We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.",
+        name: "Mark Garfield",
+        position: "CEO & Head of Product",
+    },
+    {
+        text: "Our team works tirelessly to ensure client success and satisfaction.",
+        name: "Jane Doe",
+        position: "Head of Customer Relations",
+    },
+    {
+        text: "Quality and commitment define our work culture and service delivery.",
+        name: "John Smith",
+        position: "Operations Manager",
+    }
+];
+
+
+
+
+
 
 
 function App() {
@@ -345,30 +385,39 @@ function App() {
           {/* section Great Customer */}
             <GreatCustomers></GreatCustomers>
             <section className="Great-Customers2-section">
-              <div className="container">
-                  <div className="Great-Customers2"> 
-                      <img src="../project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo"/>                
-                      <h4 className="Great-Customers__text Quote">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</h4>
-                      <span className="Great-Customers__caption h6">Mark Garfield</span>
-                      <span className="Great-Customers__caption h6">CEO & Head of Product</span>
-                      <div className="Great-Customers__paj-wapper">
-                          <div className="Great-Customers__paj Great-Customers__paj--active"></div>
-                          <div className="Great-Customers__paj"></div>
-                          <div className="Great-Customers__paj"></div>
-                          <div className="Great-Customers__paj"></div>
-                      </div>
-                      <div className="arrow-btn-wrapper arrow-btn-wrapper--slider arrow-btn-wrapper--slider-left">
-                          <svg className="arrow-btn arrow-btn--left">
-                              <use href="#arrow-right"></use>
-                          </svg>
-                      </div>                           
-                      <div className="arrow-btn-wrapper arrow-btn-wrapper--slider arrow-btn-wrapper--slider-right">
-                          <svg className="arrow-btn">
-                              <use href="#arrow-right"></use>
-                          </svg>
-                      </div>                           
-                  </div>
-              </div>
+            <div className="container">
+                <Swiper 
+                    modules={[Navigation, Pagination, Autoplay]} 
+                    navigation={{
+                        nextEl: ".custom-next",
+                        prevEl: ".custom-prev",
+                      }}
+                    pagination={{ clickable: true }} 
+                    loop = {true}
+                    // autoplay={{ delay: 5000 }}
+                >
+                    {testimonials.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="Great-Customers2">
+                                <img src="../project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo" alt="Logo" />
+                                <h4 className="Great-Customers__text Quote">{item.text}</h4>
+                                <span className="Great-Customers__caption h6">{item.name}</span>
+                                <span className="Great-Customers__caption h6">{item.position}</span>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <button className="custom-prev">
+                    <svg className="svgs">
+                        <use href="#arrow-right"></use>
+                    </svg>
+                </button>
+                <button className="custom-next">
+                    <svg className="svgs">
+                        <use href="#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
             </section>
 
           {/* section Question */}
