@@ -15,13 +15,13 @@
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    color: #FFFFFF;
 }
 .footer1__box-text{
-    color: var(--App-bg);
     margin-bottom: 1.6rem;
 }
 .footer1__box-title{
-    color: var(--App-bg);
+    
     margin-bottom: 3.2rem;
 }
 .footer2-section{
@@ -33,6 +33,7 @@
 }
 .footer2{
     width: 100%;
+    color: #FFFFFF;
 }
 .footer2__box{
     background-color: var(--primery-color);
@@ -47,19 +48,19 @@
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    color: #FFFFFF;
 }
 .footer2__box-text{
-    color: var(--App-bg);
     margin-bottom: 1.6rem;
 }
 .footer2__box-title{
-    color: var(--App-bg);
     margin-bottom: 3.2rem;
 }
 .footer__box-input{
     width: 50%;
     height: 7.2rem;
     padding: 2rem 2.8rem;
+    background-color: var(--App-bg);
     border: 2px solid rgba(76, 64, 247, 1);
     outline: none;
     color: #ABAFC7;
@@ -85,10 +86,9 @@
     flex-wrap: wrap;
     row-gap: 6rem  ;
     padding: 0 0 4.4rem 0;
-    border-bottom: 0.1rem solid var(--App-bg);
+    border-bottom: 0.1rem solid #FFFFFF;
 }
 .footer-text{
-    color: var(--App-bg);
     width: 36rem;
     margin-top: 3.2rem;
     opacity: 75%;
@@ -113,7 +113,6 @@
     height: 2rem;
 }
 .footer-title{
-    color: var(--App-bg);
 }
 .footer-img{
     margin-top: 3.2rem;
@@ -129,7 +128,6 @@
     width: 100%;
 }
 .footer-content{
-    color: var(--App-bg);
 }
 .footer__end{
     padding: 4.4rem 2rem 5.5rem 2rem;
