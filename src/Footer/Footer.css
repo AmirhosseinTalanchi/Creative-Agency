@@ -112,8 +112,6 @@
     width: 2rem;
     height: 2rem;
 }
-.footer-title{
-}
 .footer-img{
     margin-top: 3.2rem;
 }
@@ -126,8 +124,6 @@
     flex-direction: column;
     row-gap: 2rem;
     width: 100%;
-}
-.footer-content{
 }
 .footer__end{
     padding: 4.4rem 2rem 5.5rem 2rem;

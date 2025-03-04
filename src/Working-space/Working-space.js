@@ -22,7 +22,7 @@ function WorkingSpace(){
                             <div className="Working-space__img-wrapper Working-space__img-wrapper4">
                                 <img className="working-space__img" src="project-imgae/home-page-img/img/Working space section/image4.webp"/>
                             </div>
-                            <div className="Working-space__img-wrapper">
+                            <div className="Working-space__img-wrapper Working-space__img-wrapper5">
                                 <img className="working-space__img" src="project-imgae/home-page-img/img/Working space section/image5.webp"/>
                             </div>
                             <div className="Working-space__img-wrapper Working-space__img-wrapper6">

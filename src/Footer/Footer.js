@@ -7,7 +7,7 @@ export default function Footer() {
       <section>
         <div className="container">
             <div className='footer1'>
-            <div className='footer1__box'>
+                <div className='footer1__box'>
                     <p className="footer1__box-text menu">Are You Ready For</p>
                     <h3 className="footer1__box-title h3">Start a New Project</h3>
                     <a href="#" className="main-top__btn btn table-button">
@@ -21,13 +21,11 @@ export default function Footer() {
             <div className="footer2__box">
                     <p className="footer2__box-text menu">Get Notified About Project</p>
                     <h3 className="footer2__box-title h3">Subscribe Now</h3>
-                    <input type="email" className="footer__box-input body" placeholder="Email">
-                    
-                    </input>   
-                    <svg className="footer__box-send">
+                    <input type="email" className="footer__box-input body" placeholder="Email"/>   
+                    {/* <svg className="footer__box-send">
                         <use href="#send"></use>
-                    </svg>
-                </div>
+                    </svg> */}
+            </div>
         </div>
       </section>
 

@@ -168,7 +168,7 @@ function App() {
         </svg>
 
         {/* //App Header */}
-        <Header toggleTheme={toggleTheme}>
+        <Header theme={theme} toggleTheme={toggleTheme} >
         </Header>
 
         {/*  App Main */}
@@ -191,7 +191,7 @@ function App() {
                           </a>
                       </div>
                       <div className="main-top__right">
-                         <img className='main-top__right-img' src="project-imgae/home-page-img/img/main-top-img.webp"/>
+                         <img className='main-top__right-img' src="project-imgae/home-page-img/img/main-top-img.png"/>
                       </div>
                   </div>
               </div>
@@ -484,7 +484,7 @@ function App() {
                 </div>
             </div>
             <img src="project-imgae/home-page-img/img/question section/questoin section right shape.png" className="question__right-shape"/>
-            <img src="project-imgae/home-page-img/img/question section/question section left shape.png" className="question__left-shape"/>
+            <img src="project-imgae/home-page-img/img/question section/question section left shape.webp" className="question__left-shape"/>
           </section>
 
           {/* section Testimonials */}

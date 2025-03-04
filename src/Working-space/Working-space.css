@@ -15,12 +15,21 @@
 }
 .Working-space__img-wrapper{
     position: relative;
+    flex-grow: 1;
 }
 .Working-space__img-wrapper4{
     margin-top: -13rem;
+    display: flex;
+    flex-grow: 1;
 }
 .Working-space__img-wrapper6{
     margin-top: -8rem;
+    display: flex;
+    flex-grow: 1;
+}
+.Working-space__img-wrapper5{
+    display: flex;
+    flex-grow: 1;
 }
 .working-space__img{
     width: 100%;
@@ -29,12 +38,6 @@
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-}
-.Working-space__img-caption{
-    color: var(--App-bg);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* responsive */

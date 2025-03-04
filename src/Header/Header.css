@@ -134,18 +134,28 @@ header{
     column-gap: 2rem;
     align-items: center;
 }
-.night-mode-btn-wrapper{
+#night-btn{
     width: 4rem;
     padding: 0.3rem 0.3rem;
     display: flex;
     align-items: center;
-    justify-content: end;
     background-color: var(--primery-color);
     border-radius: 1rem;
-    -webkit-border-radius: 1rem;
+    -webkit-border-radisu: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transition: all 150ms;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -ms-transition: all 150ms;
+    -o-transition: all 150ms;
+}
+.light-btn{
+    justify-content: end;
+}
+.dark-btn{
+   justify-content: start;
 }
 .night-mode-btn{
     width: 1.7rem;

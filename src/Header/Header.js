@@ -2,7 +2,7 @@ import { click } from "@testing-library/user-event/dist/click"
 import "./Header.css"
 
 
-function Header({toggleTheme}){
+function Header({ theme,toggleTheme}){
     return(
         <div>
             <header>
@@ -21,7 +21,7 @@ function Header({toggleTheme}){
                         </ul>
 
                         <div className="header-right">
-                            <div className="night-mode-btn-wrapper" onClick={toggleTheme}>
+                            <div onClick={toggleTheme} id="night-btn" className={theme === "light" ? "light-btn" : "dark-btn"}>
                                 <div className="night-mode-btn"></div>
                             </div>
                             <a href="#" className="header__btn table-button">Contact us</a>
