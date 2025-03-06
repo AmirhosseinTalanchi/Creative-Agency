@@ -59,7 +59,7 @@ export default function Footer() {
                     <div className="footer-id menu">© 2021 Creative Agency</div>
                     <ul className="footer-menu"> 
                         <a className="footer-menu-itemes menu">Home</a>
-                        <a className="footer-menu-itemes menu">Works</a>
+                        <a className="footer-menu-itemes menu" href="work-page.html">Works</a>
                         <a className="footer-menu-itemes menu">About</a>
                         <a className="footer-menu-itemes menu">Pricing </a>
                         <a className="footer-menu-itemes menu">contact us</a>

@@ -220,7 +220,7 @@ header{
     header{
         padding-bottom: 1.5rem;
     }
-    .header__btn{
+    .header-right{
         display: none;
     }
     .header__mobile-btn-wrapper{

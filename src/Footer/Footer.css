@@ -143,10 +143,11 @@
     column-gap: 3.6rem;
     row-gap: 2rem;
     flex-wrap: wrap;
-    color: #ABAFC7;
+   
 }
 .footer-menu-itemes{
     cursor: pointer;
+    color: #ABAFC7;
 }
 .foooter-logo-wrapper{
     display: flex;

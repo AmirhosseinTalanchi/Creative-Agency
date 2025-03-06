@@ -1,5 +1,5 @@
-import { click } from "@testing-library/user-event/dist/click"
 import "./Header.css"
+import { Link } from "react-router-dom";
 
 
 function Header({ theme,toggleTheme}){
@@ -15,8 +15,8 @@ function Header({ theme,toggleTheme}){
                         </div>
 
                         <ul className="header__menu">
-                            <a className="header__menu-item header__menu-item--active h6" href="#"><li >Home</li></a>
-                            <a className="header__menu-item h6" href="#"><li >Works</li></a>
+                            <Link to="/" className="header__menu-item header__menu-item--active h6">Home</Link>
+                            <Link to="/Work" className="header__menu-item h6">Work</Link>
                             <a className="header__menu-item h6" href="#"><li >About</li></a>
                         </ul>
 
