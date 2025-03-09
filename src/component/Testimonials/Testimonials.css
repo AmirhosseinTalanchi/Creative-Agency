@@ -1,3 +1,6 @@
+.Testimonials-section{
+    background-color: var(--App-bg2);
+}
 .Testimonials{
     display: flex;
     flex-direction: column;

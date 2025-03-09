@@ -1,0 +1,117 @@
+.Working-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+}
+.Working-space__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 3rem;
+    row-gap: 3.2rem;
+    width: 100%;
+    flex-grow: 1;
+}
+.Working-space__img-wrapper{
+    position: relative;
+    flex-grow: 1;
+}
+.Working-space__img-wrapper4{
+    margin-top: -13rem;
+    display: flex;
+    flex-grow: 1;
+}
+.Working-space__img-wrapper6{
+    margin-top: -8rem;
+    display: flex;
+    flex-grow: 1;
+}
+.Working-space__img-wrapper5{
+    display: flex;
+    flex-grow: 1;
+}
+.working-space__img{
+    width: 100%;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+/* responsive */
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+}
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 992px;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -10.8rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -6.7rem;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 768px;
+    }
+    .Working-space{
+        margin-top: 12rem;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -8rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -5rem;
+    }
+    .Working-space__wrapper{
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 576px;
+    }
+    .Working-space__img-wrapper4{
+        margin-top: -6rem;
+    }
+    .Working-space__img-wrapper6{
+        margin-top: -3.7rem;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+    .Working-space__wrapper{
+        grid-template-columns: repeat(1,auto);
+     }
+     .Working-space__img-wrapper4{
+         margin-top: 0rem;
+     }
+     .Working-space__img-wrapper6{
+         margin-top: 0rem;
+     }
+}
+

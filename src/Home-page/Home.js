@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Header from './Header/Header';
-import WorkingSpace from './Working-space/Working-space';
-import GreatCustomers from './Great-customers/Great-customers';
-import Testimonials from './Testimonials/Testimonials';
-import Footer from './Footer/Footer';
-import Svgs from './svgs-comp/svgs';
+import Header from '../component/Header/Header';
+import WorkingSpace from '../component/Working-space/Working-space';
+import GreatCustomers from '../component/Great-customers/Great-customers';
+import Testimonials from '../component/Testimonials/Testimonials';
+import Footer from '../component/Footer/Footer';
+import Svgs from '../component/svgs-comp/svgs';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import './main.css';
+import './Home.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
@@ -384,16 +384,11 @@ function Home() {
             </section>        
 
           {/* section Testimonials */}
-            <section className='Testimonials-section'>
-                <div className='container'>
-                    <Testimonials></Testimonials>
-                </div>
-            </section>
-
+            <Testimonials></Testimonials>
+        
         </main>
 
          {/*  App Footer */}
-
          <Footer></Footer>
 
     </div>

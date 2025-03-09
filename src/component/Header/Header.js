@@ -17,7 +17,7 @@ function Header({ theme,toggleTheme}){
                         <ul className="header__menu">
                             <Link to="/" className="header__menu-item header__menu-item--active h6">Home</Link>
                             <Link to="/Work" className="header__menu-item h6">Work</Link>
-                            <a className="header__menu-item h6" href="#"><li >About</li></a>
+                            <Link to="/About" className="header__menu-item h6">About</Link>
                         </ul>
 
                         <div className="header-right">

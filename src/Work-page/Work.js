@@ -1,11 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Header from './Header/Header';
-import Svgs from './svgs-comp/svgs';
-import GreatCustomers from './Great-customers/Great-customers';
-import Testimonials from './Testimonials/Testimonials';
-import Footer from './Footer/Footer';
-import LastProjectBox1, {LastProjectBox2} from './last-project-box/last-project-box';
+import Header from '../component/Header/Header';
+import Svgs from '../component/svgs-comp/svgs';
+import GreatCustomers from '../component/Great-customers/Great-customers';
+import Testimonials from '../component/Testimonials/Testimonials';
+import Footer from '../component/Footer/Footer';
+import "./Work.css"
+import LastProjectBox1, {LastProjectBox2} from '../component/last-project-box/last-project-box';
 
 const Work = () => {
 
@@ -30,9 +31,6 @@ const Work = () => {
     {title:"Alpaca" ,caption:"Fundraising and caring for alpacas" ,img:"project-imgae/work-page-img/img/last-project-img/image7.png" ,color:"var(--last-pro-box)" ,shadowcolor:"var(--last-pro-box-shadow)"},
     {title:"Shopipiy" ,caption:"Online marketplace to sell and buy clothes" ,img1:"project-imgae/work-page-img/img/last-project-img/image8.png" ,img2:"project-imgae/work-page-img/img/last-project-img/image9.png" ,color:"#5CC8FC"}
   ]
-
-
-
 
   return (
 
@@ -78,21 +76,11 @@ const Work = () => {
               </section>
 
             {/* section Testimonials */}
-              <section className='Testimonials-section'>
-                  <div className='container'>
-                      <Testimonials></Testimonials>
-                  </div>
-              </section>
-             
+             <Testimonials></Testimonials>
         </main>
 
           {/*  App Footer */}
-        
-        <Footer></Footer>
-
-
-          
-
+          <Footer></Footer>
     </div>
   );
 };
