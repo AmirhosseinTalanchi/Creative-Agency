@@ -77,6 +77,8 @@ table {
     --servises-btn: #F3F4F6;
     --last-pro-box :#00113B ;
     --last-pro-box-shadow :rgba(23, 13, 166, 0.5) ;
+    --mobile-menu-bg: #00113B;
+    --mobile-menu-color : #4C40F7;
 }
 [data-theme="dark"] {
     --App-bg: #00113B;
@@ -95,6 +97,8 @@ table {
     --servises-btn: #020E2D;
     --last-pro-box :#4ADB61 ;
     --last-pro-box-shadow :rgba(23, 156, 44, 0.5);
+    --mobile-menu-bg: #4C40F7;
+    --mobile-menu-color : #00113B;
 }
 html{
     box-sizing: border-box;

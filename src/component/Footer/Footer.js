@@ -1,4 +1,5 @@
 import "./Footer.css"
+import { Link } from "react-router-dom";
 
 
 export default function Footer() {
@@ -58,9 +59,9 @@ export default function Footer() {
                 <div className="footer__end">
                     <div className="footer-id menu">© 2021 Creative Agency</div>
                     <ul className="footer-menu"> 
-                        <a className="footer-menu-itemes menu">Home</a>
-                        <a className="footer-menu-itemes menu" href="work-page.html">Works</a>
-                        <a className="footer-menu-itemes menu">About</a>
+                        <Link to="/" className="footer-menu-itemes menu">Home</Link>
+                        <Link to="/Work" className="footer-menu-itemes menu">Work</Link>
+                        <Link to="/About" className="footer-menu-itemes menu">About</Link>
                         <a className="footer-menu-itemes menu">Pricing </a>
                         <a className="footer-menu-itemes menu">contact us</a>
                     </ul>

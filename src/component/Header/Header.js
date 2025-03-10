@@ -1,42 +1,103 @@
+import { Component } from "react";
 import "./Header.css"
 import { Link } from "react-router-dom";
 
 
-function Header({ theme,toggleTheme}){
-    return(
-        <div>
-            <header>
-                <div className="container">
-                    <div className="header">
-                        <div className="app-logo-wrapper">
-                            <svg className="app-logo">
-                                <use href="#app-logo"></use>
-                            </svg>
-                        </div>
+class Header extends Component{
 
-                        <ul className="header__menu">
-                            <Link to="/" className="header__menu-item header__menu-item--active h6">Home</Link>
-                            <Link to="/Work" className="header__menu-item h6">Work</Link>
-                            <Link to="/About" className="header__menu-item h6">About</Link>
-                        </ul>
+    constructor (props){
+        super(props)
 
-                        <div className="header-right">
-                            <div onClick={toggleTheme} id="night-btn" className={theme === "light" ? "light-btn" : "dark-btn"}>
-                                <div className="night-mode-btn"></div>
+        this.state = {
+            menuClassName : "",
+            btnClassName: "",
+            coverClassName: ""
+        }
+
+        this.openMenu = this.openMenu.bind(this)
+    }
+
+    openMenu(){
+            if(this.state.menuClassName == ""){
+                this.setState({
+                    menuClassName : "header__mobile-menu--open",
+                    btnClassName : "close",
+                    coverClassName: "cover--show"
+                })
+            }
+            else{
+                this.setState({
+                    menuClassName : "",
+                    btnClassName : "",
+                    coverClassName: ""
+                })
+            }
+
+    }
+
+    
+
+    render(){
+        return(
+            <div>
+                <header>
+                    <div className="container">
+                        <div className="header">
+                            <div className="app-logo-wrapper">
+                                <svg className="app-logo">
+                                    <use href="#app-logo"></use>
+                                </svg>
                             </div>
-                            <a href="#" className="header__btn table-button">Contact us</a>
-                        </div>
-                
-                        <div className="header__mobile-btn-wrapper" id="nav-btn">
-                            <div className="header__mobile-btn"></div>
+    
+                            <ul className="header__menu">
+                                <Link to="/" className="header__menu-item header__menu-item--active h6">Home</Link>
+                                <Link to="/Work" className="header__menu-item h6">Work</Link>
+                                <Link to="/About" className="header__menu-item h6">About</Link>
+                            </ul>
+    
+                            <div className="header-right">
+                                <div onClick={this.props.toggleTheme} id="night-btn" className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>
+                                    <div className="night-mode-btn"></div>
+                                </div>
+                                <a href="#" className="header__btn table-button">Contact us</a>
+                            </div>
+                    
+                            <div className="header__mobile-btn-wrapper" onClick={this.openMenu}>
+                                <div className={`header__mobile-btn ${this.state.btnClassName}`}></div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </header>
-        </div>
-    )
-}
 
+                    <div className={`header__mobile-menu ${this.state.menuClassName}`}>
+                        <div className="header__mobile-menu-top">
+                            <div className="header__mobile-menu-head">
+                                <div className="app-logo-wrapper-dark">
+                                    <svg className="app-logo">
+                                        <use href="#app-logo"></use>
+                                    </svg>
+                                </div>
+                                <h2 className="header__mobile-menu-title body2">Creative Agency</h2>
+                            </div>
+                            <ul className="header__mobile-menu-iteme-wrapper">
+                                <Link to="/" className="header__mobile-menu-iteme body2">Home</Link>
+                                <Link to="/Work" className="header__mobile-menu-iteme body2">Work</Link>
+                                <Link to="/About" className="header__mobile-menu-iteme body2">About</Link>
+                                <div onClick={this.props.toggleTheme} className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>Dark</div>
+                            </ul>
+                            
+                        </div>
+                        <a href="#" className="header__mobile-menu-btn table-button">Contact us</a>
+                    </div>
+                    
+                    <div className={`cover ${this.state.coverClassName}`} onClick={this.openMenu}></div>
+                </header>
+            </div>
+        )
+    }
+    
+    }
+ 
 
 
 
