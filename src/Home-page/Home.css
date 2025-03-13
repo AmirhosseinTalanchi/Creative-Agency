@@ -51,10 +51,8 @@
 }
 
 .services__box-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     column-gap: 3.2rem;
     row-gap: 6rem;
   
@@ -521,6 +519,10 @@
         line-height: 2.72rem;
         width: 42.5rem;
     }
+    .services__box-wrapper{
+        grid-template-columns: repeat(3, 30.7rem);
+        column-gap: 2rem;
+    }
     .Documentation__left-shape{
         left: -10rem; 
         width: 90%;    
@@ -585,6 +587,11 @@
     }
     .services{
         margin-top: 12rem;
+    }
+    .services__box-wrapper{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 2rem;
+        row-gap: 4rem;
     }
     .section-title{
         font-size: 2.4rem;
@@ -683,6 +690,10 @@
     .section-title{
         font-size: 2rem;
         line-height: 2.8rem;
+    }
+    .services__box-wrapper{
+        grid-template-columns: repeat(1, auto);
+        row-gap: 2.4rem;
     }
     .Documentation{
         margin-top: 12rem;

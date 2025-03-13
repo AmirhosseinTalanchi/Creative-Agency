@@ -64,6 +64,7 @@ header{
     display: flex;
     align-items: center;
     display: none;
+    cursor: pointer;
 }
 .header__mobile-btn{
     width: 3rem;
@@ -222,8 +223,8 @@ header{
     justify-content: center;
     padding: 0.2rem 0.5rem;
     margin-left: -0.5rem;
+    cursor: pointer;
     border-radius: 1rem;
-    background-color: var(--mobile-menu-color) ;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;

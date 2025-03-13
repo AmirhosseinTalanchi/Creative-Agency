@@ -83,7 +83,7 @@ class Header extends Component{
                                 <Link to="/" className="header__mobile-menu-iteme body2">Home</Link>
                                 <Link to="/Work" className="header__mobile-menu-iteme body2">Work</Link>
                                 <Link to="/About" className="header__mobile-menu-iteme body2">About</Link>
-                                <div onClick={this.props.toggleTheme} className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>Dark</div>
+                                <div onClick={this.props.toggleTheme} className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>Theme</div>
                             </ul>
                             
                         </div>
