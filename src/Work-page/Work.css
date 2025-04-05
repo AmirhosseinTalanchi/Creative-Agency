@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 12rem;
 }
 .work-main-top__title{
     max-width: 85.1rem;

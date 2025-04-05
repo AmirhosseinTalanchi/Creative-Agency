@@ -4,10 +4,10 @@
 /* ///////// main-top ////////// */
 
 .main-top{
-
     display: flex;
     justify-content: space-between;
     column-gap: -10rem;
+    padding-top: 10rem;
 }
 .main-top__left{
     margin-top: 11.3rem;
@@ -66,7 +66,7 @@
     padding: 4.4rem 3rem ;
     transition: all 200ms;
     background-color: var(--App-bg);
-    box-shadow: -15px 20px 70px 0px rgba(76, 64, 247, 0.2);
+    box-shadow: 15px 20px 70px 0px rgba(76, 64, 247, 0.2);
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;

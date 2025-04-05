@@ -59,7 +59,7 @@ class Header extends Component{
                                 <div onClick={this.props.toggleTheme} id="night-btn" className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>
                                     <div className="night-mode-btn"></div>
                                 </div>
-                                <a href="#" className="header__btn table-button">Contact us</a>
+                                <Link to="/contact-us" className="header__btn table-button">Contact us</Link>
                             </div>
                     
                             <div className="header__mobile-btn-wrapper" onClick={this.openMenu}>

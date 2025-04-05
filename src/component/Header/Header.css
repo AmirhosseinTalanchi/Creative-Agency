@@ -1,6 +1,6 @@
 header{
     z-index: 100;
-    position: static;
+    position: fixed;
     right: 0;
     left: 0;
     background-color: var(--App-bg);

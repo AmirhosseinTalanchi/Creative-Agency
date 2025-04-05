@@ -1,8 +1,9 @@
 /* ///// main top ///// */
-
 .About-main-top{
+    padding-top: 18rem;
+}
+.About-main-top__box{
     background-color: var(--About-main-top);
-    margin-top: 8rem;
     padding: 8rem 16rem;
     display: flex;
     align-items: center;
@@ -59,6 +60,8 @@
     grid-template-columns:repeat(3,auto);
     row-gap: 3.2rem;
     column-gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
 }
 .moment__img-wrapper > img{
     width: 100%;
@@ -119,7 +122,7 @@
         line-height: 5.6rem;
         letter-spacing: -0.1px;
     }
-    .About-main-top{
+    .About-main-__box{
         padding: 8rem 13.3rem;
     }
     .Great-team__info-wrapper{
@@ -143,7 +146,7 @@
     .container{
         max-width: 576px;
     }
-    .About-main-top{
+    .About-main-top__box{
         padding: 6rem 2.4rem;
     }
     .Great-team__info-wrapper{
@@ -160,7 +163,7 @@
     .container{
         max-width: 100%;
     }
-    .About-main-top{
+    .About-main-top__box{
         margin-top: 3.2rem;
     }
     .About-main-top__title{
@@ -181,6 +184,9 @@
     }
     .moment__img1,.moment__img2,.moment__img3{
         margin-top: 0;
+    }
+    .moment__img-wrapper > img{
+        width: 97%;
     }
    
 }

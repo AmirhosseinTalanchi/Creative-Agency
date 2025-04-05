@@ -55,9 +55,11 @@ const About = () => {
            <section>
               <div className="container">
                 <div className="About-main-top">
-                    <h2 className="About-main-top__title h2">Get to know more about us</h2>
-                    <p className="About-main-top__caption body">We are an agency engaged in the creative industry and business, we are ready to help you to improve your business performance together with our great team</p>
-                </div>                         
+                  <div className="About-main-top__box">
+                      <h2 className="About-main-top__title h2">Get to know more about us</h2>
+                      <p className="About-main-top__caption body">We are an agency engaged in the creative industry and business, we are ready to help you to improve your business performance together with our great team</p>
+                  </div>  
+                </div>              
               </div>
            </section>
 
