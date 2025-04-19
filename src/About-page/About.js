@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Header from '../component/Header/Header';
 import Svgs from '../component/svgs-comp/svgs';
 import WorkingSpace from '../component/Working-space/Working-space';
-import Footer from '../component/Footer/Footer';
+import {Footer} from '../component/Footer/Footer';
 import GreatTeamUSer from '../component/Great-team-users/Great-team-user';
 import './About.css';
 

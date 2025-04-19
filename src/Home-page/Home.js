@@ -4,7 +4,7 @@ import Header from '../component/Header/Header';
 import WorkingSpace from '../component/Working-space/Working-space';
 import GreatCustomers from '../component/Great-customers/Great-customers';
 import Testimonials from '../component/Testimonials/Testimonials';
-import Footer from '../component/Footer/Footer';
+import {Footer} from '../component/Footer/Footer';
 import Svgs from '../component/svgs-comp/svgs';
 import 'swiper/css';
 import 'swiper/css/navigation';

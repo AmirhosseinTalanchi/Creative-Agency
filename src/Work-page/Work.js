@@ -4,7 +4,7 @@ import Header from '../component/Header/Header';
 import Svgs from '../component/svgs-comp/svgs';
 import GreatCustomers from '../component/Great-customers/Great-customers';
 import Testimonials from '../component/Testimonials/Testimonials';
-import Footer from '../component/Footer/Footer';
+import {Footer} from '../component/Footer/Footer';
 import "./Work.css"
 import LastProjectBox1, {LastProjectBox2} from '../component/last-project-box/last-project-box';
 

@@ -3,6 +3,7 @@
     padding-top: 20rem;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 12.4rem;
 }
 .main__title{
     width: 52.5rem;
@@ -11,13 +12,13 @@
 .main__caption{
     width: 39.9rem;
     color: var(--Text-Grey);
-    margin-bottom: 2.4rem;
+    margin-bottom: 4rem;
 }
 .main__email-wrapper,.main__address-wrapper,.main__phone-wrapper{
     display: flex;
     align-items: center;
     column-gap: 2.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
 }
 .main__email-icon,.main__phone-icon,.main__address-icon{
     width: 2.4rem;
@@ -44,5 +45,90 @@
 .main__message-input{
     height: 20rem;
     display: flex;
+    font-family: Poppins;
+    resize: none;
+}
+.main__btn{
+    width: 22rem;
+    height: 7.2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: #ffff
+    ;
+}
+.main__btn > svg {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.Social-medias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8rem;
+    margin-bottom: 16rem;
+}
+.Social-medias__wrapper{
+    width: 21.9rem;
+    height: 10.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: -8px 12px 50px 0px rgba(236, 236, 236, 0.5);
+    transition: all 200ms;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+.Social-medias-logo{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--App-bg);
+    border: 2px solid var(--primery-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: all 200ms;
+
+}
+.Social-medias-logo-svg{
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--primery-color);
+    transition: all 200ms;
+
+}
+.Social-medias__text{
+    color: var(--Text-Grey);
+    transition: all 200ms;
+
+}
+.Social-medias__wrapper:hover{
+    box-shadow: -20px 20px 60px 0px rgba(76, 64, 247, 0.25);
+    cursor: pointer;
+}
+.Social-medias__wrapper:hover .Social-medias-logo{
+    background-color: var(--primery-color);
+}
+.Social-medias__wrapper:hover .Social-medias-logo-svg{
+    color: var(--App-bg);
+}
+.Social-medias__wrapper:hover .Social-medias__text{
+    color: #000;
 }
 
