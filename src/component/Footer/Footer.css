@@ -162,16 +162,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 150ms;
     cursor: pointer;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -ms-transition: all 150ms;
+    -o-transition: all 150ms;
 }
 .footer-logo-svg{
     width: 1.6rem;
     height: 1.6rem;
+}
+.footer-logo:hover{
+    scale: 1.2;
+
 }
 
 

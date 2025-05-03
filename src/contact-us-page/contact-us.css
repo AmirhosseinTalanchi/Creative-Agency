@@ -8,6 +8,7 @@
 .main__title{
     width: 52.5rem;
     margin-bottom: 3.2rem;
+    color: var(--Text-Dark);
 }
 .main__caption{
     width: 39.9rem;
@@ -29,13 +30,15 @@
     color: var(--Text-Dark);
 }
 .main__name-input,.main__email-input,.main__message-input{
-    width: 55rem;
+    width: 100%;
     height: 7.2rem;
     padding: 2rem 2.8rem;
     margin-bottom: 4rem;
+    background-color: var(--App-bg);
+    color: var(--Text-Dark);
     border: 2px solid var( --primery-color);
     outline: none;
-    box-shadow: 0px 8px 24px 0px rgba(204, 204, 204, 0.5);
+    box-shadow: 0px 8px 24px 0px var(--input-box-shadow);
     border-radius: 1.1rem;
     -webkit-border-radius: 1.1rem;
     -moz-border-radius: 1.1rem;
@@ -76,8 +79,8 @@
     align-items: center;
     justify-content: center;
     column-gap: 2rem;
-    background-color: #FFFFFF;
-    box-shadow: -8px 12px 50px 0px rgba(236, 236, 236, 0.5);
+    background-color: var(--App-bg);
+    box-shadow: -8px 12px 50px 0px var(--social-shadow1);
     transition: all 200ms;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -119,16 +122,118 @@
 
 }
 .Social-medias__wrapper:hover{
-    box-shadow: -20px 20px 60px 0px rgba(76, 64, 247, 0.25);
+    box-shadow: -8px 12px 50px 0px var(--social-shadow2);
     cursor: pointer;
 }
 .Social-medias__wrapper:hover .Social-medias-logo{
     background-color: var(--primery-color);
 }
 .Social-medias__wrapper:hover .Social-medias-logo-svg{
-    color: var(--App-bg);
+    color: #ffffff;
 }
 .Social-medias__wrapper:hover .Social-medias__text{
-    color: #000;
+    color: var(--Text-Dark);
 }
+
+
+/* responsive */
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+}
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1240px;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 992px;
+    }
+}@media (max-width: 992px) {
+    .container{
+        max-width: 768px;
+    }
+    .main__title{
+        font-weight: 600;
+        font-size: 4.2rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.1px;
+        width: 36.5rem;
+    }
+    .main__caption{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        width: 32.2rem;
+        margin-bottom: 2.4rem;
+    }
+    .main__text{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .main__btn{
+        width: 18rem;
+        height: 6.4rem;
+    }
+    .main__email-wrapper,.main__address-wrapper,.main__phone-wrapper{
+        margin-bottom: 2rem;
+    }
+    .Social-medias{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 3.2rem;
+    }
+    .Social-medias__wrapper{
+        width: 40%;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 576px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main__title{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .main__caption{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        width: 38rem;
+    }
+    .main__text{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+    }
+    .main__left{
+        margin-bottom: 8rem;
+    }
+    .Social-medias__wrapper{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
 

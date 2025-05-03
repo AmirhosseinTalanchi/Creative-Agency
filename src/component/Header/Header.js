@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./Header.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 
 
 class Header extends Component{
@@ -15,6 +15,7 @@ class Header extends Component{
         }
 
         this.openMenu = this.openMenu.bind(this)
+
     }
 
     openMenu(){
@@ -36,8 +37,12 @@ class Header extends Component{
     }
 
     
+    
 
     render(){
+
+        const pathname = this.props.location.pathname;
+
         return(
             <div>
                 <header>
@@ -50,9 +55,9 @@ class Header extends Component{
                             </div>
     
                             <ul className="header__menu">
-                                <Link to="/" className="header__menu-item header__menu-item--active h6">Home</Link>
-                                <Link to="/Work" className="header__menu-item h6">Work</Link>
-                                <Link to="/About" className="header__menu-item h6">About</Link>
+                                <Link to="/" className={`header__menu-item h6 ${pathname === '/' ? 'active' : ''}`}>Home</Link>
+                                <Link to="/Work" className={`header__menu-item h6 ${pathname === '/Work' ? 'active' : ''}`}>Work</Link>
+                                <Link to="/About" className={`header__menu-item h6 ${pathname === '/About' ? 'active' : ''}`}>About</Link>
                             </ul>
     
                             <div className="header-right">
@@ -80,9 +85,9 @@ class Header extends Component{
                                 <h2 className="header__mobile-menu-title body2">Creative Agency</h2>
                             </div>
                             <ul className="header__mobile-menu-iteme-wrapper">
-                                <Link to="/" className="header__mobile-menu-iteme body2">Home</Link>
-                                <Link to="/Work" className="header__mobile-menu-iteme body2">Work</Link>
-                                <Link to="/About" className="header__mobile-menu-iteme body2">About</Link>
+                                <Link to="/" className={`header__mobile-menu-iteme body2 ${pathname === '/' ? 'active1' : ''}`}>Home</Link>
+                                <Link to="/Work" className={`header__mobile-menu-iteme body2 ${pathname === '/Work' ? 'active1' : ''}`}>Work</Link>
+                                <Link to="/About" className={`header__mobile-menu-iteme body2 ${pathname === '/About' ? 'active1' : ''}`}>About</Link>
                                 <div onClick={this.props.toggleTheme} className={this.props.theme === "light" ? "light-btn" : "dark-btn"}>Theme</div>
                             </ul>
                             
@@ -99,6 +104,9 @@ class Header extends Component{
     }
  
 
+    const HeaderWithLocation = (props) => {
+        const location = useLocation();
+        return <Header {...props} location={location} />;
+      };
 
-
-export default Header
+export default HeaderWithLocation

@@ -398,11 +398,22 @@
     border: 1px solid #D8D8D8 ;
     background-color: var(--App-bg);
     padding: 3.2rem 3.2rem 0 3.2rem;
+    transition: all 150ms;
     border-radius: 0.8rem;
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -ms-transition: all 150ms;
+    -o-transition: all 150ms;
+}
+.question__box[open] {
+    border: 2px solid #4C40F7 ;
+}
+.question__box[open] .question__arrow{
+    transform: rotate(180deg); 
 }
 .question__text{
     color: var(--Text-Dark);
@@ -417,8 +428,7 @@
 }
 .question__arrow{
     width: 2.4rem;
-    height: 2.4rem;
-    
+    height: 2.4rem; 
 }
 .question__arrow--rotate{
     transform:rotate(180deg) ;

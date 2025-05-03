@@ -65,7 +65,7 @@ export default function ContactUs() {
                       <input type="email" className="main__email-input body" placeholder="info@yourdomain.com" />
                       <textarea className="main__message-input body" placeholder="Message" />
                       <a href="#" className="main__btn btn">
-                        Get Started
+                        Let’s Talk
                         <svg>
                             <use href="#arrow-right"></use>
                         </svg>

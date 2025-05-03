@@ -5,10 +5,12 @@ import Home from './Home-page/Home';
 import Work from "./Work-page/Work";
 import About from "./About-page/About";
 import ContactUs from "./contact-us-page/contact-us";
+import ScrollToTop from './component/ScrollToTop/ScrollToTop'; 
 
 const App = () => {
   return (
     <Router>
+       <ScrollToTop />  {/* اینو اینجا اضافه کن */}
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Work" element={<Work />}/>

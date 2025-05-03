@@ -81,6 +81,9 @@ table {
     --mobile-menu-color : #4C40F7;
     --About-main-top:#F3F4F6;
     --About-Grea-team-shadow:rgba(219, 222, 225, 0.4);
+    --input-box-shadow:rgba(204, 204, 204, 0.5);
+    --social-shadow1:rgba(236, 236, 236, 0.5);
+    --social-shadow2:rgba(76, 64, 247, 0.25);
 }
 [data-theme="dark"] {
     --App-bg: #00113B;
@@ -103,7 +106,9 @@ table {
     --mobile-menu-color : #00113B;
     --About-main-top:#4C40F7;
     --About-Grea-team-shadow:rgba(76, 64, 247, 0.5);
-
+    --input-box-shadow: rgba(76, 64, 247, 0.5);
+    --social-shadow1:rgba(76, 64, 247, 0.12);
+    --social-shadow2:rgba(76, 64, 247, 0.5);
 }
 html{
     box-sizing: border-box;
