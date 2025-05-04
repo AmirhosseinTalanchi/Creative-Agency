@@ -9,17 +9,17 @@ import ScrollToTop from './component/ScrollToTop/ScrollToTop';
 
 const App = () => {
   return (
-    <Router>
-       <ScrollToTop />  {/* اینو اینجا اضافه کن */}
+    <Router basename="/Creative-Agency">
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/Work" element={<Work />}/>
-        <Route path="/About" element={<About />}/>
-        <Route path="/contact-us" element={<ContactUs />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/Work" element={<Work />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </Router>
-    
   );
 };
+
 
 export default App;
