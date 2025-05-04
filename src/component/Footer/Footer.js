@@ -46,7 +46,7 @@ function Footer() {
                     </div>
                     <div className="footer__main-mid">
                         <h4 className="footer-title h6">Our Office</h4>
-                        <img src="Project-imgae/home-page-img/img/map.png" className="footer-img"/>
+                        <img src="project-imgae/home-page-img/img/map.png" className="footer-img"/>
                     </div>
                     <div className="footer__main-right">
                         <h4 className="footer-title h6">Contact</h4>
