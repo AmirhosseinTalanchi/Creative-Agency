@@ -303,7 +303,7 @@ function Home() {
                     {testimonials.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="Great-Customers2">
-                                <img src="../project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo" alt="Logo" />
+                                <img src="project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo" alt="Logo" />
                                 <h4 className="Great-Customers__text Quote">{item.text}</h4>
                                 <span className="Great-Customers__caption h6">{item.name}</span>
                                 <span className="Great-Customers__caption h6">{item.position}</span>
