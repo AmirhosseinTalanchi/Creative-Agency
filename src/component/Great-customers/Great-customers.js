@@ -13,7 +13,7 @@ function GreatCustomers() {
                                 <use href="#amazon"></use>
                             </svg>
                             <div className="Great-Customers__logo">
-                               <img src="../project-imgae/home-page-img/svg/Great Customers section img/jeep-7.png"/>
+                               <img src="project-imgae/home-page-img/svg/Great Customers section img/jeep-7.png"/>
                             </div>
                             <svg className="Great-Customers__logo">
                                 <use href="#careem"></use>

@@ -12,12 +12,12 @@ function Footer() {
                 <div className='footer1__box'>
                     <p className="footer1__box-text menu">Are You Ready For</p>
                     <h3 className="footer1__box-title h3">Start a New Project</h3>
-                    <a href="#" className="main-top__btn btn table-button">
-                        Get Started
-                        <svg>
-                            <use href="#arrow-right"></use>
-                        </svg>
-                    </a>
+                    <Link to="/contact-us" className="main-top__btn btn table-button">
+                                 Get Started
+                                 <svg>
+                                      <use href="#arrow-right"></use>
+                                 </svg>
+                    </Link> 
                 </div>
             </div>
             <div className="footer2__box">
@@ -63,8 +63,7 @@ function Footer() {
                         <Link to="/" className="footer-menu-itemes menu">Home</Link>
                         <Link to="/Work" className="footer-menu-itemes menu">Work</Link>
                         <Link to="/About" className="footer-menu-itemes menu">About</Link>
-                        <a className="footer-menu-itemes menu">Pricing </a>
-                        <a className="footer-menu-itemes menu">contact us</a>
+                        <Link to="/contact-us" className="footer-menu-itemes menu">contact us</Link>
                     </ul>
                     <div className="foooter-logo-wrapper">
                         <div className="footer-logo">
@@ -128,7 +127,7 @@ function Footer2() {
                     </div>
                     <div className="footer__main-mid">
                         <h4 className="footer-title h6">Our Office</h4>
-                        <img src="Project-imgae/home-page-img/img/map.png" className="footer-img"/>
+                        <img src="project-imgae/home-page-img/img/map.png" className="footer-img"/>
                     </div>
                     <div className="footer__main-right">
                         <h4 className="footer-title h6">Contact</h4>
@@ -145,8 +144,7 @@ function Footer2() {
                         <Link to="/" className="footer-menu-itemes menu">Home</Link>
                         <Link to="/Work" className="footer-menu-itemes menu">Work</Link>
                         <Link to="/About" className="footer-menu-itemes menu">About</Link>
-                        <a className="footer-menu-itemes menu">Pricing </a>
-                        <a className="footer-menu-itemes menu">contact us</a>
+                        <Link to="/contact-us" className="footer-menu-itemes menu">contact us</Link>
                     </ul>
                     <div className="foooter-logo-wrapper">
                         <div className="footer-logo">

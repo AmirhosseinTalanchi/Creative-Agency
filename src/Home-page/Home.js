@@ -79,12 +79,12 @@ function Home() {
                               with us
                           </h1>
                           <p className="main-top__caption body">We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.</p>
-                          <a href="#" className="main-top__btn btn table-button">
-                              Get Started
-                              <svg>
-                                  <use href="#arrow-right"></use>
-                              </svg>
-                          </a>
+                          <Link to="/contact-us" className="main-top__btn btn table-button">
+                                 Get Started
+                                 <svg>
+                                      <use href="#arrow-right"></use>
+                                 </svg>
+                          </Link>                          
                       </div>
                       <div className="main-top__right">
                          <img className='main-top__right-img' src="project-imgae/home-page-img/img/main-top-img.png"/>
@@ -289,39 +289,39 @@ function Home() {
           {/* section Great Customer */}
             <GreatCustomers></GreatCustomers>
             <section className="Great-Customers2-section">
-            <div className="container">
-                <Swiper 
-                    modules={[Navigation, Pagination, Autoplay]} 
-                    navigation={{
-                        nextEl: ".custom-next",
-                        prevEl: ".custom-prev",
-                      }}
-                    pagination={{ clickable: true }} 
-                    loop = {true}
-                    // autoplay={{ delay: 5000 }}
-                >
-                    {testimonials.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="Great-Customers2">
-                                <img src="project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo" alt="Logo" />
-                                <h4 className="Great-Customers__text Quote">{item.text}</h4>
-                                <span className="Great-Customers__caption h6">{item.name}</span>
-                                <span className="Great-Customers__caption h6">{item.position}</span>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <button className="custom-prev">
-                    <svg className="svgs">
-                        <use href="#arrow-right"></use>
-                    </svg>
-                </button>
-                <button className="custom-next">
-                    <svg className="svgs">
-                        <use href="#arrow-right"></use>
-                    </svg>
-                </button>
-            </div>
+                <div className="container">
+                    <Swiper 
+                        modules={[Navigation, Pagination, Autoplay]} 
+                        navigation={{
+                            nextEl: ".custom-next",
+                            prevEl: ".custom-prev",
+                        }}
+                        pagination={{ clickable: true }} 
+                        loop = {true}
+                        // autoplay={{ delay: 5000 }}
+                    >
+                        {testimonials.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="Great-Customers2">
+                                    <img src="project-imgae/home-page-img/img/Path 113.png" className="Great-Customers2__logo" alt="Logo" />
+                                    <h4 className="Great-Customers__text Quote">{item.text}</h4>
+                                    <span className="Great-Customers__caption h6">{item.name}</span>
+                                    <span className="Great-Customers__caption h6">{item.position}</span>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    <button className="custom-prev">
+                        <svg className="svgs">
+                            <use href="#arrow-right"></use>
+                        </svg>
+                    </button>
+                    <button className="custom-next">
+                        <svg className="svgs">
+                            <use href="#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
             </section>
 
           {/* section Question */}
